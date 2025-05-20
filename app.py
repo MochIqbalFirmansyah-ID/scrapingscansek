@@ -14,9 +14,9 @@ nltk.download('stopwords')
 st.set_page_config(page_title="Dashboard ScanSek", layout="wide")
 
 # Koneksi ke MongoDB
-client = MongoClient('mongodb://localhost:27017/')
-db = client['scansekscrap']
-collection = db['berita_kesehatan']
+client = MongoClient('mongodb://streamlit:beritakita123@164.92.109.4:27017/scrap?authSource=scrap')
+db = client['scrap']
+collection = db['daftar_berita']
 
 # Ambil data dari MongoDB
 data = list(collection.find())
