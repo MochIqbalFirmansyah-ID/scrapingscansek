@@ -14,7 +14,7 @@ nltk.download('stopwords')
 st.set_page_config(page_title="Dashboard ScanSek", layout="wide")
 
 # Koneksi ke MongoDB
-client = MongoClient('mongodb://berita:berita123@172.184.197.28:27017/beritascansek_db?authSource=beritascansek_db')
+client = MongoClient('mongodb://iqbal:passwordkuaman@70.153.17.43:27017/beritascansek_db?authSource=beritascansek_db')
 db = client['scrap']
 collection = db['daftar_berita']
 
